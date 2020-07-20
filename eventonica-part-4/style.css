@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    text-align: center;
+    color:white;
+    background-color: #050e35;
+}
+.startHere { 
+    background-image: url(https://www.gannett-cdn.com/presto/2019/12/18/PGRE/4fa79f9a-8d51-4736-9035-c62452c34e4e-new_years.jpg?crop=799,449,x0,y13&width=1600&height=800&fit=bounds);
+    background-size: cover;
+    background-position:center;
+    padding-bottom:50vh;
+    text-align: center;
+}
+#title{
+    color:white;
+    padding-top: 50vh;
+    
+}
+
+#party2020{
+    overflow: hidden;
+}
+input{
+    border:2px black solid ;
+}
+
+li{
+    list-style-position: inside;
+    
+}
