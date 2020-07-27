@@ -1,7 +1,7 @@
 
 class EventRecommender {
     constructor() {
-    // All main properties should go here.
+  
     
     this.events =[];
     this.users = [];
@@ -29,11 +29,6 @@ class EventRecommender {
       let theRestOfTheUsers=this.users.filter(user =>user.id !==id);
       this.users=theRestOfTheUsers;
   
-//         // console.log(event.users, )
-//         console.log(`before splicing: :${JSON.stringify(this.users)}`);
-//       this.users.splice(this.users.indexOf(user),1);
-//       console.log(`after splicing: ${JSON.stringify(this.users)}`);
-//   return this.users
   
      
       
@@ -42,8 +37,7 @@ class EventRecommender {
     deleteEvent(id) {
         let theRestOfTheEvent=this.events.filter(event=>event.id !==id);
         this.events=theRestOfTheEvent;
-//         this.events.splice(this.events.indexOf(event),1);
-//   return this.events
+
     }
 
     findEventsByDate(dates){

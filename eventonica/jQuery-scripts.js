@@ -1,11 +1,5 @@
 $(document).ready( () => {
     const eventRecommender = new EventRecommender(); 
-    // console.log(recommandation)
-    // let html="";
-    // $.each(recommandation.users, function(index,item){
-    //       html+=`<li>${item.newUser}</li>`
-    // });
-    // $("#all-users").html(html);
    
     $("#button").click(function(e){
          let html="";
@@ -18,11 +12,6 @@ $(document).ready( () => {
           html+=`<li>${item.newUser}</li>`
     });
     $("#all-users").html(html);
-        // console.log(addUserToList);
-        // $("#all-users").append("<li>"+ addUserToList+"</li>")
-        // $("#all-users").append("<li>User ID: "  + addId + ": " + "User Name: "+ addUser +"</li>")
-        // $("#all-users").html(addUser)
-       
     })
     
 // detele user block 
@@ -35,12 +24,6 @@ $(document).ready( () => {
             html+=`<li>${item.newUser}</li>`
       });
       $("#all-users").html(html);
-        // // let allUserText=$(all-users).text();
-        // $("#all-users li").each(function(){
-        //     if($("#all-users li").text===$("#delete-user-id").val()){
-        //         $("#all-users li").remove();
-        //     }
-        // })
      
     })
 
@@ -58,7 +41,7 @@ $(document).ready( () => {
           });
           $("#eventList").html(html);
         
-        //   $("#eventList").append("<li>Event Id:"+eventId+ ",Event Name:" + eventName+"</li>")
+
           
      })
 
@@ -105,14 +88,5 @@ $("#categoryBtn").click(function(e){
 
 });
 
- //Save Event for user: use nested loop
-// $("#categoryBtn").click(function(e){
-//     e.preventDefault();
-//     let html="";
-//      let userId=$("#save-user-id").val();
-//      let eventId=$("#save-event-id").val();
-//      eventRecommender.saveUserEvent(user,eventId);
-     
-// )}
 });
 

@@ -21,10 +21,6 @@ $(document).ready( () => {
     
     $("#all-users").html(html);
 
-        // console.log(addUserToList);
-        // $("#all-users").append("<li>"+ addUserToList+"</li>")
-        // $("#all-users").append("<li>User ID: "  + addId + ": " + "User Name: "+ addUser +"</li>")
-        // $("#all-users").html(addUser)
        
     })
     
@@ -57,7 +53,6 @@ $(document).ready( () => {
           
           $("#eventList").html(html);
         
-        //   $("#eventList").append("<li>Event Id:"+eventId+ ",Event Name:" + eventName+"</li>")
           
      })
 
@@ -102,26 +97,10 @@ $("#keywordBtn").click(function(e){
                html= `No Result`
            }
            $("#keywordResult").append(html);
-        //     let searchByKeyword=$("#add-event-keyword").val();
-        //    console.log(events)
-        //    for (var i=0;i<events.length;i++) {
-
-        //    }
-                    // Parse the response.
-                    // Do other things.
         }    
         
       });
-   
-//     let html="";
-//     let searchByKeyword=$("#add-event-keyword").val();
-//      eventRecommender.findEventsByDate(searchByKeyword);
-//      $.each(eventRecommender.events, function(index,item){
-//          if(searchByKeyword===item.keyword){
-//         html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-//          }
-//   });
-//   $("#keywordesult").html(html);
+
 
 })	
 
