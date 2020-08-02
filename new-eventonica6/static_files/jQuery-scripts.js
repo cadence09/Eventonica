@@ -1,11 +1,5 @@
 $(document).ready( () => {
-   // const eventRecommender = new EventRecommender(); 
-    // console.log(recommandation)
-    // let html="";
-    // $.each(recommandation.users, function(index,item){
-    //       html+=`<li>${item.newUser}</li>`
-    // });
-    // $("#all-users").html(html);
+   
 
     $("#button").click(function(e){
         let html="";
@@ -23,7 +17,7 @@ $(document).ready( () => {
             success:function (res){
                 console.log(JSON.stringify(res)) 
                
-                // html="You have post the username:"+JSON.stringify(res.user_name)+ "successfully."
+              
                
             }
            
@@ -47,10 +41,7 @@ $(document).ready( () => {
             // dataType:"text",
             success:function (res){
                 console.log(JSON.stringify(res)) 
-                // $.each(res, function(index,item){
-                //             html+=`<li>${item.newUser}</li>`
-                //       });
-                //       $("#all-users").html(html);
+              
             }
            
            
@@ -76,14 +67,6 @@ $(document).ready( () => {
             // dataType:"text",
             success:function (res){
                  console.log(res) 
-                // $.each(res, function(index,item){
-                //             html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-                //       });
-                      
-                //       $("#eventList").html(html);
-           
-         
-          
      }
     })
 })
@@ -101,10 +84,7 @@ $("#deleteEventBtn").click(function(e){
         // dataType:"text",
         success:function (res){
             console.log(res) 
-            // $.each(res, function(index,item){
-            //             html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-            //       });
-            //       $("#eventList").html(html);
+       
         }
        
        
@@ -151,51 +131,7 @@ $("#keywordBtn").click(function(e){
         }
     })
 })
-            // let searchByKeyword=$("#keyword").val();
-        //     html="";
           
-        //    for (let i=0; i<ticketMasterEvents.length; i++){
-        //        if (ticketMasterEvents[i].name.includes(searchByKeyword)){
-                        
-        //          html+=`<li>${ticketMasterEvents[i].name}<br>Event type:${ticketMasterEvents[i].type}---Date:${ticketMasterEvents[i].dates.start.localDate}</li>`;
-        //          eventRecommender.addEvent(ticketMasterEvents[i].name,ticketMasterEvents[i].id,ticketMasterEvents[i].dates.start.localDate,ticketMasterEvents[i].type)
-        //        }
-        //     // console.log("ticketmasterEvents[i] returns", ticketMasterEvents[i].name)
-        //    }
-         
-        //    if(html.length===0){
-        //        html= `No Result`
-        //    }
-        //    $("#keywordResult").append(html);
-
-        //     let searchByKeyword=$("#add-event-keyword").val();
-        //    console.log(events)
-        //    for (var i=0;i<events.length;i++) {
-
-        //    }
-                    // Parse the response.
-              
-                    // Do other things.
-                
-       
-        
-      
-      
-//     let html="";
-//     let searchByKeyword=$("#add-event-keyword").val();
-//      eventRecommender.findEventsByDate(searchByKeyword);
-//      $.each(eventRecommender.events, function(index,item){
-//          if(searchByKeyword===item.keyword){
-//         html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-//          }
-//   });
-//   $("#keywordesult").html(html);
-
-// })
-
-
-
-
 
 // Search Event By date
 $("#dateBtn").click(function(e){
@@ -220,13 +156,7 @@ $("#dateBtn").click(function(e){
        
        
     })
-    //  eventRecommender.findEventsByDate(searchByDate);
-//      $.each(eventRecommender.events, function(index,item){
-//          if(searchByDate===item.date){
-//         html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-//          }
-//   });
-//   $("#result").html(html);
+   
 
 });
 
@@ -243,20 +173,10 @@ $("#categoryBtn").click(function(e){
         // dataType:"text",
         success:function (res){
             console.log("match the category" +JSON.stringify(res)) 
-            // $.each(res, function(index,item){
-            //              if(searchByCategory===item.category){
-            //             html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-            //              }
-            //       });
+            
                   $("#categoryResult").html(res);
         }
-//      eventRecommender.findEventsByDate(searchByCategory);
-//      $.each(eventRecommender.events, function(index,item){
-//          if(searchByCategory===item.category){
-//         html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-//          }
-//   });
-//   $("#categoryResult").html(html);
+
 
 });
 
@@ -277,7 +197,6 @@ $("#savePersonalEvent").click(function(e){
            
         } 
 });
-    //  eventRecommender.saveUserEvent(userId,eventId);
     
 })
 })

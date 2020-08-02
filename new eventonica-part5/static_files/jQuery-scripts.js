@@ -1,11 +1,6 @@
 $(document).ready( () => {
     const eventRecommender = new EventRecommender(); 
-    // console.log(recommandation)
-    // let html="";
-    // $.each(recommandation.users, function(index,item){
-    //       html+=`<li>${item.newUser}</li>`
-    // });
-    // $("#all-users").html(html);
+
 
     $("#button").click(function(e){
         let html="";
@@ -26,16 +21,7 @@ $(document).ready( () => {
                             html+=`<li>${item.newUser}</li>`
                       });
                       $("#all-users").html(html);
-            //     $.each(res, function(index,item){
-            //         html+=`<li>${item.newUser}</li>`
-            //   });
-           
-                    // eventRecommender.addUser(addNewUser,addId);
-                    // $.each(data, function(index,item){
-                    //           html+=`<li>${item.newUser}</li>`
-                    //     });
-                        
-                    //     $("#all-users").html(html);
+            
             }
            
            
@@ -43,28 +29,6 @@ $(document).ready( () => {
        
     })
     
-        // $("#button").click(function(e){
-        //      let html="";
-        //  
-    // $("#button").click(function(e){
-    //      let html="";
-    //     e.preventDefault();
-    //     let addId=$("#add-user-id").val();
-    // let addNewUser=$("#add-user-name").val();
-    //     eventRecommender.addUser(addNewUser,addId);
-
-    //     $.each(eventRecommender.users, function(index,item){
-    //       html+=`<li>${item.newUser}</li>`
-    // });
-    
-    // $("#all-users").html(html);
-
-    //     // console.log(addUserToList);
-    //     // $("#all-users").append("<li>"+ addUserToList+"</li>")
-    //     // $("#all-users").append("<li>User ID: "  + addId + ": " + "User Name: "+ addUser +"</li>")
-    //     // $("#all-users").html(addUser)
-       
-    // })
     
 // detele user block 
     $("#deleteBtn").click(function(e){
@@ -114,14 +78,6 @@ $(document).ready( () => {
                       
                       $("#eventList").html(html);
            
-         //    eventRecommender.addEvent(eventName,eventId,eventDate,eventCategory,eventKeyword);
-        //     $.each(eventRecommender.events, function(index,item){
-        //         html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-        //   });
-          
-        //   $("#eventList").html(html);
-        
-        //   $("#eventList").append("<li>Event Id:"+eventId+ ",Event Name:" + eventName+"</li>")
           
      }
     })
@@ -148,11 +104,7 @@ $("#deleteEventBtn").click(function(e){
        
        
     })
-//     eventRecommender.deleteEvent(deleteEventId);
-//     $.each(eventRecommender.events, function(index,item){
-//         html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-//   });
-//   $("#eventList").html(html);
+
 
 });
 
@@ -195,51 +147,7 @@ $("#keywordBtn").click(function(e){
         }
     })
 })
-            // let searchByKeyword=$("#keyword").val();
-        //     html="";
-          
-        //    for (let i=0; i<ticketMasterEvents.length; i++){
-        //        if (ticketMasterEvents[i].name.includes(searchByKeyword)){
-                        
-        //          html+=`<li>${ticketMasterEvents[i].name}<br>Event type:${ticketMasterEvents[i].type}---Date:${ticketMasterEvents[i].dates.start.localDate}</li>`;
-        //          eventRecommender.addEvent(ticketMasterEvents[i].name,ticketMasterEvents[i].id,ticketMasterEvents[i].dates.start.localDate,ticketMasterEvents[i].type)
-        //        }
-        //     // console.log("ticketmasterEvents[i] returns", ticketMasterEvents[i].name)
-        //    }
-         
-        //    if(html.length===0){
-        //        html= `No Result`
-        //    }
-        //    $("#keywordResult").append(html);
-
-        //     let searchByKeyword=$("#add-event-keyword").val();
-        //    console.log(events)
-        //    for (var i=0;i<events.length;i++) {
-
-        //    }
-                    // Parse the response.
-              
-                    // Do other things.
-                
-       
         
-      
-      
-//     let html="";
-//     let searchByKeyword=$("#add-event-keyword").val();
-//      eventRecommender.findEventsByDate(searchByKeyword);
-//      $.each(eventRecommender.events, function(index,item){
-//          if(searchByKeyword===item.keyword){
-//         html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-//          }
-//   });
-//   $("#keywordesult").html(html);
-
-// })
-
-
-
-
 
 // Search Event By date
 $("#dateBtn").click(function(e){
@@ -264,13 +172,7 @@ $("#dateBtn").click(function(e){
        
        
     })
-    //  eventRecommender.findEventsByDate(searchByDate);
-//      $.each(eventRecommender.events, function(index,item){
-//          if(searchByDate===item.date){
-//         html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-//          }
-//   });
-//   $("#result").html(html);
+   
 
 });
 
@@ -294,13 +196,7 @@ $("#categoryBtn").click(function(e){
                   });
                   $("#categoryResult").html(html);
         }
-//      eventRecommender.findEventsByDate(searchByCategory);
-//      $.each(eventRecommender.events, function(index,item){
-//          if(searchByCategory===item.category){
-//         html+=`<li>Event: ${item.eventName}<br> Date:${item.date}-Category:${item.category}-Keyword:${item.keyword}</li>`
-//          }
-//   });
-//   $("#categoryResult").html(html);
+
 
 });
 })
@@ -321,7 +217,7 @@ $("#categoryBtn").click(function(e){
            
         } 
 });
-    //  eventRecommender.saveUserEvent(userId,eventId);
+  
     
 })
 
